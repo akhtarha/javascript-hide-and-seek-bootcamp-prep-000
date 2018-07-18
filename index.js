@@ -10,26 +10,21 @@ function deepestChild(){
   
 }
 
-function increaseRankBy1(n){
+function increaseRankBy(n){
   const rankedList = document.getElementById('app').querySelectorAll('ul.ranked-list li');
   
-  for (let i=0; i < ranked-list.length; i++) {
+  for (let i=0; i < rankedList.length; i++) {
     rankedList[i].innerHTML = parseInt(rankedList[i].innerHTML + n)
   }
   
   return rankedList
 }
 
-function increaseRankBy(n){
-  
-  
+function increaseRankBy2(n){
   const festree = document.getElementById('app').querySelectorAll('ul.ranked-list li');
-  
   
   for(let i = 0; i < festree.length; i++){
     festree[i].innerHTML = parseInt(festree[i].innerHTML) + n;
- }
- 
- return festree;
-  
+  }
+  return festree;
 }
